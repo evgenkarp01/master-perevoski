@@ -1,0 +1,293 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/typography";
+@import "vendor/normalize";
+@import "base/manifest";
+@import "components/sprite";
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+code {
+	background: #d3dddd;
+	padding: 5px;
+	margin-right: 5px;
+}
+
+body {
+    font-family: "Lato", Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    line-height: rem(20);
+    font-size: rem(16);
+}
+
+.ttl{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    h1{
+        font-size: rem(32);
+        font-weight: bold;
+        font-family: $RCN, Areal, sans-serif;
+    }
+    h2{
+        font-size: rem(30);
+        font-weight: bold;
+    }
+    h3{
+        font-size: rem(20);
+        font-weight: bold;
+    }
+    h4{
+        font-size: rem(18);
+        font-weight: 600;
+    }
+    h5{
+        font-size: rem(16);
+        font-weight: 600;
+    }
+    h6{
+        font-size: rem(14);
+        font-weight: 600;
+    }
+}
+.btn{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    button{
+        cursor: pointer;
+        font-size: rem(16);
+        font-weight: 600;
+        min-width: 173px;
+        height: 40px;
+        box-shadow: 0 4px 0 #2e9564;
+        border-radius: 8px;
+        border: none;
+        padding: 0 30px;
+        @include trans(0.05);
+        background-image: linear-gradient(180deg,
+         rgba(109, 234, 174, 1) 0%, 
+         rgba(117, 237, 180, 1) 51%, 
+         rgba(42, 180, 114, 1) 100%);
+        outline: none;
+        &:hover{
+             background-image: linear-gradient(180deg,
+             rgba(79, 224,155, 1) 0%, 
+             rgba(117, 237, 180, 1) 51%, 
+             rgba(42, 180, 114, 1) 100%);
+             box-shadow: 0 2px 0 #3ca774;
+        }
+        &:active {
+            box-shadow: 0 -2px 0 #2e9564;
+            background-image: linear-gradient(180deg,
+            rgba(42, 180, 114, 1) 0%, 
+            rgba(109, 234, 174, 1) 51%, 
+             rgba(42, 180, 114, 1)   100%);
+
+        }
+    }
+}
+header{
+    color: #767676;
+    width: 100%;
+    min-height: 80px;
+    border-bottom: 1px solid $dark;
+    .flex-header{
+       align-items: flex-start;
+        padding-top: 20px;
+    }
+    .city{
+        font-size: rem(18);
+        position: relative;
+        padding-left: 31px;
+        font-weight: 500;
+        &:before{
+            content:"";
+            position: absolute;
+            background:  url(../src/img/sprites/sprite.svg) no-repeat;
+            background-position: -2px 0;
+            left: 0;
+            top: -6px;
+            width: 21px;
+            height: 25px;
+        }
+    }
+    .logo{
+        font-family: "Roboto Condensed";
+        font-size: rem(28);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .phone{
+        position: relative;
+        padding-left: 23px;
+        a{
+            color: #767676;
+            font-size: rem(20);
+            font-weight: 500;
+        }
+        &:before{
+            content:"";
+            position: absolute;
+            background:  url(../src/img/sprites/sprite.svg) no-repeat;
+            background-position: -6px -25px;
+            left: 0;
+            top: -6px;
+            width: 13px;
+            height: 25px;
+        }
+    }
+    nav{
+        position: relative;
+        text-align: center;
+        top: 20px;
+        ul{
+            padding: 0;
+            margin: 0;
+            margin-bottom: 20px;
+            li{
+                display: inline-block;
+                padding: 10px 20px;
+                a{
+                    font-weight: 500;
+                    color: $bk;
+                    text-decoration: none;
+                }
+                &.active, &:hover{
+                    background: $dark;
+                }
+            }
+        }
+    }
+}
+.col-pol{
+    width: 50%;
+}
+.call-out{
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 93px;
+    margin: 0 auto;
+    padding: 20px;
+    background:url(/img/bg-callout.png)no-repeat;
+    background-size:contain;
+    background-position:center;
+    box-sizing:  border-box;
+    p{
+        color: #353535;
+        font-family: "Roboto Condensed";
+        font-size: rem(24);
+        font-weight: 700;
+        line-height: rem(31);
+    }
+}
+section{
+    position: relative;
+    &.banner{
+        min-height: 650px;
+        width: 100%;
+        background:url(/img/bg1.jpg) repeat-y;
+        background-repeat:no-repeat;
+        background-size:contain;
+        background-position:bottom;
+        .flex-banner{
+            align-items: flex-start;
+        }
+        .ttl-head{
+            @include shadow();
+            border-radius: 4px;
+            background-color: #ffffff;
+            padding: 20px 25px;
+            margin-top: 75px;
+            h1{
+                font-size: rem(32);
+                font-weight: 900;
+                line-height: 41px;
+                color: #353535;
+            }
+        }
+        .utp{
+            padding: 13px 25px;
+            background-color: #ffffff;
+            margin-top: 33px;
+            display: inline-block;
+            @include shadow();
+            p{
+                font-size:rem(24);
+                font-weight: 500;
+                line-height: 31px;
+            }
+        }
+        .btn{
+            margin-top: 80px;
+        }
+        .car{
+            img{
+                max-width: 100%;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &.services{
+        background: #f6f6f6;
+    }
+    .services{
+        background: #f6f6f6;
+        &__ttl{
+           position: absolute;
+           left: 0;
+           right: 0;
+           top: -50px;
+           margin: auto;
+        }
+        &__full-stack{
+            padding-top: 70px;
+            .item{
+                max-width: 262px;
+                min-height: 345px;
+                border-radius: 4px;
+                background-color: #ffffff;
+                text-align: center;
+                padding: 20px;
+                margin: 0 2px;
+                box-sizing: border-box;
+                .ico{
+                    img{
+                        width: 80px;
+                        height: 80px;
+                        margin: 0 auto;
+                    }
+                }
+                .ttl{
+                    margin-top: 7px;
+                    h3{
+                        font-size: $h3-fz;
+                        font-weight: 700;
+                        line-height: 26px;
+                    }
+                }
+                .txt{
+                    margin-top: 20px;
+                    max-height: 225px;
+                    overflow: auto;
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}

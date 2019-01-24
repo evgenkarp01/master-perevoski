@@ -1,0 +1,22 @@
+@function rem($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}rem;
+    //font-size: rem(VAR);
+}
+
+@mixin font($fontname, $fweight, $fstyle, $fontfamily){
+    @font-face {
+        font-family: $fontfamily;
+        src: url($dir+$fontname+'.eot');
+        src: url($dir+$fontname+'.eot') format("eot"),
+             url($dir+$fontname+'.ttf') format("truetype");
+        font-weight: $fweight;
+        font-style: $fstyle;
+    }
+}
+@mixin trans($time){
+    transition: all $time+s;
+}
+
+@mixin shadow(){
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,113 @@
+input::-webkit-input-placeholder {
+  color: $wt;
+  font-size: rem(16);
+}
+input::-moz-placeholder {
+  color: $wt;
+  font-size: rem(16);
+}
+input:-moz-placeholder {
+  color: $wt;
+  font-size: rem(16);
+}
+input:-ms-input-placeholder {
+  color: $wt;
+  font-size: rem(16);
+}
+textarea::-webkit-input-placeholder {
+  color: $wt;
+  font-size: rem(16);
+}
+textarea::-moz-placeholder {
+  color: $wt;
+  font-size: rem(16);
+}
+textarea:-moz-placeholder {
+  color: $wt;
+  font-size: rem(16);
+}
+textarea:-ms-input-placeholder {
+  color: $wt;
+  font-size: rem(16);
+}
+input:focus, textarea:focus{
+    border-color: #2172a2 !important;
+}
+
+::-webkit-scrollbar-button {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 0px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  height: 50px;
+  box-shadow: 0px 1px 1px #fff inset;
+  background-color: #EFEFEF;
+  z-index: 999;
+  background-image: url("../img/polsun.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+::-webkit-resizer {
+  background-image: url("");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 0px;
+}
+::-webkit-scrollbar {
+  width: 11px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.ttl-h2{
+  max-width: 573px;
+  padding: 25px 0;
+  @include shadow();
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+.mt-block{
+    margin-top: $mb;
+}
+.mt-ttl{
+    margin-top: $mt;
+}
+//////////////////SLICK DOTS
+.slick-dots li button{
+  width: 20px;
+  height: 20px;
+  border: 2px solid #777;
+  border-radius: 100%;
+  &[aria-selected="true"]{
+    border: 2px solid #000;
+  }
+  &:before{
+    display: none;
+  }
+}
+.slick-active{
+  button{
+    border: 2px solid #000 !important;
+  }
+}
+.slick-dots{
+  padding-top: 40px;
+  background: #f6f6f6;
+}
