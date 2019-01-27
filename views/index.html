@@ -23,7 +23,6 @@
     <link rel="shortcut icon"  href="favicon.ico">
     </head>
     <body>
-
         <header>
             <div class="container">
                 <div class="flex flex-header">
@@ -34,13 +33,35 @@
                     </div>
                 </div>
                 <nav>
-                    <ul>
-                        <li class="active"><a href="">Главная</a></li>
-                        <li><a href="">Услуги</a></li>
-                        <li><a href="">Преимущества</a></li>
-                        <li><a href="">Акции</a></li>
-                        <li><a href="">Контакты</a></li>
+                    <ul class="no-mobile">
+                        <li class="active"><a href="#oneBlock">Главная</a></li>
+                        <li><a href="#twoBlock">Услуги</a></li>
+                        <li><a href="#fourBlock">Преимущества</a></li>
+                        <li><a href="#fiveBlock">Акции</a></li>
+                        <li><a href="#eightBlock">Контакты</a></li>
                     </ul>
+                    <div class="hamburger-btn">
+                        <div class="hamburger closed">
+                          <div class="burger-main">
+                            <div class="burger-inner">
+                              <span class="top"></span>
+                              <span class="mid"></span>
+                              <span class="bot"></span>
+                            </div>
+                          </div>
+
+                          <div class="svg-main">
+                            <svg class="svg-circle">
+                            <path class="path" fill="none" stroke="#6fe0d9" stroke-miterlimit="10" stroke-width="4" d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2"/>
+                            </svg>
+                          </div>
+                          <div class="path-burger">
+                            <div class="animate-path">
+                              <div class="path-rotation"></div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -48,14 +69,14 @@
             <div class="container flex flex-banner">
                 <div class="col-pol">
                     <div class="ttl-head">
-                        <h1>Проверенный грузоперевозчик <br>по Ростову от 490р/час!</h1>
+                        <h1>Грузоперевозки по честным ценам!</h1>
                     </div>
                     <div class="utp">
                         <p>
                             По области и России от 15 руб/км. <br>Грузчики от 250 руб/час
                         </p>
                     </div>
-                    <div class="btn"><button>Получить бесплатную консултацию</button></div>
+                    <div class="btn"><button>Узнать точную цену перевозки</button></div>
                 </div>
                 <div class="col-pol">
                     <div class="car"><img src="/img/gasel.png" alt=""></div>
@@ -68,21 +89,21 @@
             </div>
             <div class="services__full-stack " id="services-slick">
                 <div class="item">
-                    <div class="ico"><img src="/img/ico1.svg" alt=""></div>
+                    <div class="ico"><img src="/img/ico7.svg" alt=""></div>
                     <div class="ttl">
-                        <h3>Грузовое такси</h3>
+                        <h3>Грузоперевозки в другой город</h3>
                     </div>
                     <div class="txt">
-                        Грузовое такси по Ростову-на-Дону. Машины разной вместимости отвезут ваши вещи, технику, стройматериалы и даже мусор. Приедем в течение 15 минут.
+                        Перевозим грузы в любой город России отдельными автомобилями (не сборные)по цене - от 15 руб/км. Предоставляем все необходимые документы
                     </div>
                 </div>
                 <div class="item">
                     <div class="ico"><img src="/img/ico2.svg" alt=""></div>
                     <div class="ttl">
-                        <h3>Грузовое такси</h3>
+                        <h3>Коммерческие перевозки</h3>
                     </div>
                     <div class="txt">
-                        Грузовое такси по Ростову-на-Дону. Машины разной вместимости отвезут ваши вещи, технику, стройматериалы и даже мусор. Приедем в течение 15 минут.
+                        Сотрудничаем с компаниями на взаимовыгодных условиях. Работаем с НДС и без. Делаем скидки для постоянных клиентов.
                     </div>
                 </div>
                 <div class="item">
@@ -91,86 +112,339 @@
                         <h3>Грузовое такси</h3>
                     </div>
                     <div class="txt">
-                        Грузовое такси по Ростову-на-Дону. Машины разной вместимости отвезут ваши вещи, технику, стройматериалы и даже мусор. Приедем в течение 15 минут.
+                        Грузовое такси от 490 руб/час. Описание услуги уже есть в шаблоне
                     </div>
                 </div>
                 <div class="item">
                     <div class="ico"><img src="/img/ico4.svg" alt=""></div>
                     <div class="ttl">
-                        <h3>Грузовое такси</h3>
+                        <h3>Квартирный переезд</h3>
                     </div>
                     <div class="txt">
-                        Грузовое такси по Ростову-на-Дону. Машины разной вместимости отвезут ваши вещи, технику, стройматериалы и даже мусор. Приедем в течение 15 минут.
+                        Организуем переезд по Ростову-на-Дону всего за 980 рублей.  Отвезем в другой город по низкой цене. Есть грузчики. Поможет разобрать и собрать мебель
                     </div>
                 </div>
                 <div class="item">
                     <div class="ico"><img src="/img/ico5.svg" alt=""></div>
                     <div class="ttl">
-                        <h3>Грузовое такси</h3>
+                        <h3>Офисный переезд</h3>
                     </div>
                     <div class="txt">
-                        Грузовое такси по Ростову-на-Дону. Машины разной вместимости отвезут ваши вещи, технику, стройматериалы и даже мусор. Приедем в течение 15 минут.
+                        Офисный переезд от 1000 рублей. Приедем в любое удобное время. Погрузим и выгрузим, разберем и соберем всю мебель. Звоните!
                     </div>
                 </div>
                 <div class="item">
                     <div class="ico"><img src="/img/ico6.svg" alt=""></div>
                     <div class="ttl">
-                        <h3>Грузовое такси</h3>
+                        <h3>Вывоз мусора</h3>
                     </div>
                     <div class="txt">
-                        Грузовое такси по Ростову-на-Дону. Машины разной вместимости отвезут ваши вещи, технику, стройматериалы и даже мусор. Приедем в течение 15 минут.
+                        Вывоз мусора от 1500 руб/машина. Грузоподъемность до 2 тонн. Обычно этого более, чем достаточно для вывоза мусора после ремонта или уборки участка
                     </div>
                 </div>
                 <div class="item">
-                    <div class="ico"><img src="/img/ico7.svg" alt=""></div>
+                    <div class="ico"><img src="/img/ico1.svg" alt=""></div>
                     <div class="ttl">
-                        <h3>Грузовое такси</h3>
+                        <h3>Грузчики</h3>
                     </div>
                     <div class="txt">
-                        Грузовое такси по Ростову-на-Дону. Машины разной вместимости отвезут ваши вещи, технику, стройматериалы и даже мусор. Приедем в течение 15 минут.
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="ico"><img src="/img/ico5.svg" alt=""></div>
-                    <div class="ttl">
-                        <h3>Грузовое такси</h3>
-                    </div>
-                    <div class="txt">
-                        Грузовое такси по Ростову-на-Дону. Машины разной вместимости отвезут ваши вещи, технику, стройматериалы и даже мусор. Приедем в течение 15 минут.
+                        Грузчики от 250 руб/час. Предоставляем услуги грузчиков по низкой цене. Нет оплаты за этажи. Работают быстро и аккуратно. Всегда трезвые и вежливые
                     </div>
                 </div>
             </div>
             <div class="call-out">
                 <p>Не нашли нужную услугу?<br>
-                Позвоните 8(928) 107-82-61<br>
+                Позвоните 8 (938) 160-80-47<br>
                 и мы вам поможем!</p>
             </div>
         </section>
+        <section class="process" id="threeBlock">
+            <div class="container">
+                <div class="flex process__flex">
+                    <div class="process__item">
+                        <div class="ico" id="processOneIco"></div>
+                        <div class="txt">
+                            <p>Позвоните нам и мы назовем точную стоимость перевозки. Она не изменится!</p>
+                        </div>
+                    </div>
+                    <div class="process__arrow"><img src="/img/arrow-procwss.svg" alt=""></div>
+                    <div class="process__item">
+                        <div class="ico" id="processTwoIco"></div>
+                        <div class="txt">
+                            <p>Машина приезжает в течение 15 минут и забирает груз</p>
+                        </div>
+                    </div>
+                    <div class="process__arrow"><img src="/img/arrow-procwss.svg" alt=""></div>
+                    <div class="process__item">
+                        <div class="ico" id="processThreeIco"></div>
+                        <div class="txt">
+                            <p>При необходимости мы не только погрузим и разгрузим вещи, но и разберем и соберем мебель</p>
+                        </div>
+                    </div>
+                    <div class="process__arrow"><img src="/img/arrow-procwss.svg" alt=""></div>
+                    <div class="process__item">
+                        <div class="ico" id="processFourIco"></div>
+                        <div class="txt">
+                            <p>Доставляем груз максимально быстро</p>
+                        </div>
+                    </div>
+                    <div class="process__arrow"><img src="/img/arrow-procwss.svg" alt=""></div>
+                    <div class="process__item">
+                        <div class="ico" id="processFiveIco"></div>
+                        <div class="txt">
+                            <p>И только после доставки вы оплачиваете перевозку</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <section class="advantages mt-ttl" id="fourBlock">
+            <div class="container">
+                <div class="ttl-h2 ttl">
+                    <h2>Почему мы?</h2>
+                </div>
+                <div class="flex advantages__flex mt-block">
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                Мы называем точную стоимость еще до начала грузоперевозки и она не меняется. Мы работаем честно!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                Наши автомобили оснащены специальными креплениями, что позволяет безопасно перевозить любой груз
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                Предоставляем все необходимые документы для возмещения НДС
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                Холодильник перевозится стоя и вы можете быть спокойны за его дальнейшую работу
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                Мебель и бытовая техника закрепляется специальными ремнями и не повреждается при грузоперевозке
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                Ваш переезд оплачивает работодатель? Предоставим все документы для возмещения расходов
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                У нас аккуратные и вежливые грузчики и водители. Вы будете приятно удивлены
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                Мы несем ответственность за ваш груз и доставим его в целости и сохранности
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                Вы  можете ехать вместе с водителем при перевозке по Ростову-на-Дону или при переезде в другой город. Сэкономите на билетах!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="desc">
+                            <p>
+                                У нас автомобили высотой 2,2 метра и длиной до 4,2 метра. Поместится все!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="description">
+                   <div class="seporate"></div>
+                    <p>
+                        МЫ ОТЛИЧАЕМСЯ ОТ ДРУГИХ и всегда соблюдаем предварительные договоренности, потому что мы уважаем своих клиентов и знаем, что за хорошую работу нас будут рекомендовать своим друзьям. А это гораздо выгоднее, чем постоянно платить за рекламу. 
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="stock mt-ttl" id="fiveBlock">
+            <div class="container">
+                <div class="ttl">
+                    <h2>Спец предложения!</h2>
+                </div>
+                <div class="flex stock__flex mt-block">
+                    <div class="col-pol stock__item">
+                        <div class="img"><img src="/img/stock.jpg" alt=""></div>
+                        <div class="txt">
+                            <p>Не хотите  тратить свои время, силы и главное - нервы на организацию перевозки? Воспользуйтесь нашим пакетным предложением в Ростове-на-Дону:
+                            </p>
+                            <ul>
+                                <li>«Газель» +1 грузчик на 2 часа всего - 1250 ₽!</li>
+                                <li>«Газель» +2 грузчика на 2 часа всего 1500 ₽!</li>
+                            </ul>
+                        </div>
+                        <div class="btn stock__btn"><button>Заказать</button></div>
+                    </div>
+                    <div class="col-pol stock__item">
+                        <div class="img"><img src="/img/stock2.jpg" alt=""></div>
+                        <div class="txt">
+                            <p>Нужно быстро перевезти груз на короткое расстояние? Устали искать выгодное предложение? Позвоните нам и мы отвезем вас по честной цене!
+                            </p>
+                            <ul>
+                                <li>«Газель» грузоподъемностью до 2 тонн всего за 980 ₽!</li>
+                                <li>Приедем за 15 минут в любой конец города</li>
+                            </ul>
+                        </div>
+                        <div class="btn stock__btn"><button>Заказать</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery mt-ttl" id="sixBlock">
+            <div class="arrow gallery__prev"></div>
+            <div class="gallery__sldr" id="gallery-slick">
+                <div class="gallery__slide">
+                    <a href="" data-source="" title="">
+                        <img src="/img/tahka.png" alt="">
+                    </a>
+                </div>
+                <div class="gallery__slide">
+                    <a href="" data-source="" title="">
+                        <img src="/img/tahka.png" alt="">
+                    </a>
+                </div>
+                <div class="gallery__slide">
+                    <a href="" data-source="" title="">
+                        <img src="/img/tahka.png" alt="">
+                    </a>
+                </div>
+                <div class="gallery__slide">
+                    <a href="" data-source="" title="">
+                        <img src="/img/tahka.png" alt="">
+                    </a>
+                </div>
+                <div class="gallery__slide">
+                    <a href="" data-source="" title="">
+                        <img src="/img/tahka.png" alt="">
+                    </a>
+                </div>
+                <div class="gallery__slide">
+                    <a href="" data-source="" title="">
+                        <img src="/img/tahka.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="arrow gallery__next"></div>
+        </section>
+        <div class="gradient">
+        <section class="review mt-ttl" id="sevenBlock">
+            <div class="container">
+                <div class="ttl ttl-h2">
+                    <h2>Отзывы клиентов</h2>
+                </div>
+                <div class="flex review__flex mt-block">
+                    <div class="review__item">
+                        <div class="auhtor"><img src="/img/auhtor.png" alt=""></div>
+                        <div class="name">Александра Литвинова</div>
+                        <div class="txt">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не </div>
+                    </div>
+                    <div class="review__item">
+                        <div class="auhtor"><img src="/img/auhtor.png" alt=""></div>
+                        <div class="name">Александра Литвинова</div>
+                        <div class="txt">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не </div>
+                    </div>
+                    <div class="review__item">
+                        <div class="auhtor"><img src="/img/auhtor.png" alt=""></div>
+                        <div class="name">Александра Литвинова</div>
+                        <div class="txt">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не </div>
+                    </div>
+                    <div class="review__item">
+                        <div class="auhtor"><img src="/img/auhtor.png" alt=""></div>
+                        <div class="name">Александра Литвинова</div>
+                        <div class="txt">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts mt-ttl" id="eightBlock">
+            <div class="container">
+                <div class="ttl ttl-h2">
+                    <h2>Контакты</h2>
+                </div>
+                <div class="flex contacts__flex mt-block">
+                    <div class="col-pol">
+                        <div class="address">
+                            <address class="flex">
+                                <span class="phone">+7 (938) 160-80-47</span>
+                                <span class="city">Ростов-на-Дону</span>
+                            </address>
+                            <div class="form-contacts">
+                                <div class="inp flex">
+                                    <input type="text" placeholder="Ваше имя">
+                                    <input type="text" placeholder="Ваш телефон">
+                                </div>
+                                <textarea name="" placeholder="Сообщение"></textarea>
+                                <div class="btn contacts__btn"><button>Отправить</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-pol">
+                        <div class="bg"><img src="/img/gas-group.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="flex">
+                    <div class="logo"><span>Мастер перевозки</span></div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="#oneBlock">Главная</a></li>
+                                <li><a href="#twoBlock">Услуги</a></li>
+                                <li><a href="#fourBlock">Преимущества</a></li>
+                                <li><a href="#fiveBlock">Акции</a></li>
+                                <li class="active"><a href="#eightBlock">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="social"><div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,whatsapp" data-size="s"></div></div>
+                </div>
+                <div class="offer">
+                    <p>Расчет и цены, представленные на сайте не являются публичной афертой и представлены в ознакомительных целях. Итоговая стоимость зависит от количества километров в пути, объема груза и времени, затраченного на грузоперевозку. Подробности по телефону 8(904) 344-69-99</p>
+                    <p>Все права защищены. Сайт подготовлен <a target="_blank" href="http:ewal-web.ru">ewal-web.ru</a></p>
+                    <p>Copyright © 2019г</p>
+                </div>
+            </div>
+        </footer>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
           crossorigin="anonymous"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/custom.js"></script>
+    <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
     </body>
 </html>

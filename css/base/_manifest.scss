@@ -1,37 +1,37 @@
 input::-webkit-input-placeholder {
-  color: $wt;
+  color: $placeholder-color;
   font-size: rem(16);
 }
 input::-moz-placeholder {
-  color: $wt;
+  color: $placeholder-color;
   font-size: rem(16);
 }
 input:-moz-placeholder {
-  color: $wt;
+  color: $placeholder-color;
   font-size: rem(16);
 }
 input:-ms-input-placeholder {
-  color: $wt;
+  color: $placeholder-color;
   font-size: rem(16);
 }
 textarea::-webkit-input-placeholder {
-  color: $wt;
+  color: $placeholder-color;
   font-size: rem(16);
 }
 textarea::-moz-placeholder {
-  color: $wt;
+  color: $placeholder-color;
   font-size: rem(16);
 }
 textarea:-moz-placeholder {
-  color: $wt;
+  color: $placeholder-color;
   font-size: rem(16);
 }
 textarea:-ms-input-placeholder {
-  color: $wt;
+  color: $placeholder-color;
   font-size: rem(16);
 }
 input:focus, textarea:focus{
-    border-color: #2172a2 !important;
+    border-color: $focus-color;
 }
 
 ::-webkit-scrollbar-button {
